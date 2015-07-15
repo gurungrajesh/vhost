@@ -128,9 +128,9 @@ apache_default
     #echo-- -- -- --SITE IS UP-- -- -- -- -
 #-------Database ------------
 
-MYSQL_DB="create database if not exists $A;"
-MYSQL_PER="grant all on $A.* to 'root'@'localhost' identified by 'admin123';"
-MYSQL_FLUSH="flush privileges"
+MYSQL_DB="CREATE DATABASE IF NOT EXISTS $A;"
+MYSQL_PER="GRANT ALL ON $A.* TO 'root'@'localhost' IDENTIFIED BY 'admin123';"
+MYSQL_FLUSH="FLUSH PRIVILIGES;"
 MYSQL_RUN="${MYSQL_DB}${MYSQL_PER}${MYSQL_FLUSH}"
 echo
 #read -p "DatabaseName:" dbname
